@@ -71,5 +71,5 @@ document.getElementById('okayCalorie').addEventListener('click', function() {
     let second = document.getElementById('write');
     second.style.opacity = 0;
     isTrue = true;
-    globalCounter--;
+    globalCounter = 0;
 })

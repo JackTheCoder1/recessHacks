@@ -1,0 +1,56 @@
+h1 {
+    background: 
+      radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#4881ac 54% 57%,#0000 59%) 0 calc(172px/2),
+      radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#4881ac 54% 57%,#0000 59%) calc(172px/2) 0,
+      radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#4881ac 54% 57%,#0000 59%),
+      radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#4881ac 54% 57%,#0000 59%),
+      #4f8dbd;
+    background-size: calc(172px/4.667) 172px,172px calc(172px/4.667);
+    margin-top: -8px;
+    margin-left: -8px;
+    padding: 50px;
+    width: 100%;
+
+}
+
+.divisor {
+    margin: 50px;
+    width: 300px;
+    background-color: #65b4f1;
+    border: 3px solid #65b4f1;
+    border-radius: 5%;
+    position: absolute;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-size: 42px;
+    position: relative;
+    margin-top: 30px;
+    
+}    
+
+#first {
+    margin-left: 5%;
+    margin-right: 30%;
+}
+
+#second {
+    margin-left: 37.5%;
+    margin-right: 62.5%;
+}
+
+#third {
+    margin-right: 5%;
+    margin-left: 70%;
+}
+
+i {
+    font-size: 70px;
+    padding: 40px 35px;
+}
+
+* {
+    font-family: sans-serif;
+}
