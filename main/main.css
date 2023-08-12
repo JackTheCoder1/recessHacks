@@ -1,4 +1,4 @@
-h1 {
+.head {
     background: 
       radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#4881ac 54% 57%,#0000 59%) 0 calc(172px/2),
       radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#4881ac 54% 57%,#0000 59%) calc(172px/2) 0,
@@ -9,7 +9,7 @@ h1 {
     margin-top: -8px;
     margin-left: -8px;
     padding: 50px;
-    width: 102%;
+    width: 100%;
     font-size: 50px;
     border-bottom: 4px solid gray;
 }
@@ -42,7 +42,7 @@ a:active {
 
 #first {
     margin-left: 5%;
-    width: 25%;
+    margin-right: 30%;
 }
 
 #second {
@@ -69,14 +69,22 @@ i {
 }
 
 body {
-    background-color: #bee3ff;
+    background-color: #cce7fc
 }
 
 .bg {
-    background-image: linear-gradient(gray, #bee3ff);
+    background-image: linear-gradient(gray, #cce7fc);
     height: 40px;
     width: 100%;
     margin-left: -8px;
     margin-top: -33px;
     position: absolute;
+}
+
+.bg2 {
+    background-image: linear-gradient(gray, #cce7fc);
+    height: 40px;
+    width: 100%;
+    margin-right: -8px;
+    margin-top: -33px;
 }
