@@ -8,9 +8,9 @@
     background-size: calc(172px/4.667) 172px,172px calc(172px/4.667);
     margin-top: -8px;
     margin-left: -8px;
-    padding: 50px;
+    padding: 30px;
+    display: inline;
     width: 100%;
-    font-size: 50px;
     border-bottom: 4px solid gray;
 }
 
@@ -22,6 +22,7 @@
     border-radius: 5%;
     position: absolute;
     text-align: center;
+    margin-top: 150px;
 }
 
 a {
@@ -71,20 +72,24 @@ i {
 body {
     background-color: #cce7fc
 }
-
+/* 
 .bg {
-    background-image: linear-gradient(gray, #cce7fc);
+    background-image: linear-gradient(gray, #c6e5fc);
     height: 40px;
     width: 100%;
     margin-left: -8px;
-    margin-top: -33px;
+    margin-top: -34px;
     position: absolute;
 }
 
 .bg2 {
-    background-image: linear-gradient(gray, #cce7fc);
+    background-image: linear-gradient(gray, #c6e5fc);
     height: 40px;
     width: 100%;
     margin-right: -8px;
-    margin-top: -33px;
+    margin-top: -34px;
+} */
+
+.secondDivider {
+    margin-top: 1200px;
 }
