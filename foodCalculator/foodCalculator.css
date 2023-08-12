@@ -1,0 +1,92 @@
+h1 {
+    background:
+      conic-gradient(at 62.5% 12.5%, #5c72d4 25%, #0000 0) calc(86px/-8) calc(86px/2),
+      conic-gradient(at 62.5% 12.5%, #5c72d4 25%, #0000 0) calc(-3*86px/8) calc(86px/4),
+      conic-gradient(at 87.5% 62.5%, #5c72d4 25%, #0000 0) calc(3*86px/8) calc(86px/4),
+      conic-gradient(at 87.5% 62.5%, #5c72d4 25%, #0000 0) calc(86px/-8) 0,
+      conic-gradient(at 25% 12.5%, #5c72d4 25%, #0000 0) 0 calc(86px/-4),
+      conic-gradient(at 25% 12.5%, #5c72d4 25%, #0000 0) calc(86px/-4) 0,
+      conic-gradient(at 87.5% 87.5%, #5c72d4 25%, #0000 0) calc(86px/8) 0
+      #516adb;
+    background-size: 86px 86px;
+
+
+    width: 100%;
+    margin-top: -12px;
+    margin-left: -12px;
+    padding: 20px;
+    border-bottom: 4px solid gray;
+    margin-bottom: 45px;
+}
+
+.formInput {
+    position: absolute;
+    border: 2px solid rgba(103, 103, 161, 0.822);
+    border-radius: 5%;
+    margin-left: 4.6%;
+    padding: 20px;
+    max-width: 400px;
+    background-color: rgba(162, 162, 255, 0.7);
+}
+
+#tree {
+    margin-left: 42%;
+    padding: 8px 12px;
+    border: 1px solid rgba(103, 103, 161, 1);
+    background-color: rgba(103, 103, 161, 1);
+    border-radius: 3%;
+}
+
+#tree:active {
+    background-color: rgba(83, 83, 141, 1);
+    border: 1px solid rgba(83, 83, 141, 1);
+}
+
+#write {
+    position: relative;
+    border: 2px solid rgba(77, 165, 111, 0.7);
+    opacity: 0;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: rgba(169, 250, 200, 0.7);
+    margin-left: 50%;
+    margin-right: 10%;
+    max-width: 20%;
+}
+
+body {
+    background-color: #e5e5f7;
+    background-image: linear-gradient(rgba(190, 193, 255, 0.6) 3.2px, transparent 3.2px), linear-gradient(90deg, rgba(190, 193, 255, 0.6) 3.2px, transparent 3.2px), 
+    linear-gradient(rgba(190, 193, 255, 0.6) 1.6px, transparent 1.6px), linear-gradient(90deg, rgba(190, 193, 255, 0.6) 1.6px, #e5e5f7 1.6px);
+    background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+    background-position: -3.2px -3.2px, -3.2px -3.2px, -1.6px -1.6px, -1.6px -1.6px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+#errorMessage {
+    color: red;
+}
+
+#okayCalorie {
+    margin-top: 5px;
+    background-color: rgba(77, 165, 111);
+    border: 2px solid rgba(77, 165, 111);
+    padding: 4px 6px;
+    color: white;
+    margin-left: 40%;
+    border-radius: 3px;
+}
+
+#okayCalorie:active {
+    background-color: rgba(57, 145, 91);
+    border: 2px solid rgba(57, 145, 91);
+}
+
+.formInput input {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 1px;
+}

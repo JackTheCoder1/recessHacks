@@ -2,7 +2,7 @@
 
 <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
 <html lang="en">
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="foodCalculator.css">
 
 <header>
     <title>Food Calculator</title>
@@ -12,18 +12,25 @@
     <h1>Calorie Calculator</h1><br><br>
     
     <form class="formInput">
+        <p class="large">Below, you will be asked to enter a series of macronutrients based on an assumption of how many of each you consume daily. For instance, if you have 50 grams of protein daily, please type 50 in the Protein field.</p><br><br>
         <label for="protein">Protein intake (g):</label><br><br>
-        <input type="number" min="0" name="protein" id="protein"><br><br><br>
+        <input type="number" min="0" name="protein" id="protein" default="0" placeholder="0"><br><br><br>
         <label for="carbs">Carbohydrate intake (g):</label><br><br>
-        <input type="number" min="0" name="carbs" id="carbs"><br><br><br>
+        <input type="number" min="0" name="carbs" id="carbs" default="0" placeholder="0"><br><br><br>
         <label for="fat">Fat intake (g):</label><br><br>
-        <input type="number" min="0" name="fat" id="fat"><br><br><br>
+        <input type="number" min="0" name="fat" id="fat" default="0" placeholder="0"><br><br><br>
         <label for="alcohol">Alcohol intake (g):</label><br><br>
-        <input type="number" min="0" name="alcohol" id="alcohol"><br><br><br>
+        <input type="number" min="0" name="alcohol" id="alcohol" default="0" placeholder="0"><br><br>
+        <p id="errorMessage">  </p>
         <input type="button" id="tree" value="Submit">
     </form>
 
+    <div id="write">
+        <h3>Your daily caloric intake</h3>
+        <p id="caloriesHere"></p>
+        <input type="button" id="okayCalorie" value="Okay">
+    </div>
+
     <script src="foodCalculator.js"></script>
-    <p id="write"></p>
 </body>
 </html>
