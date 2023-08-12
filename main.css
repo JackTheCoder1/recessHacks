@@ -1,0 +1,20 @@
+h1 {
+    background-color: rgb(92, 114, 212);
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    padding: 20px;
+}
+
+.formInput {
+    border: 2px solid gray;
+    border-radius: 5%;
+    margin: 20px 100px;
+    padding: 20px;
+    max-width: 400px;
+    background-color: rgba(162, 162, 255, 0.7);
+}
+
+#tree {
+    margin-left: 42%;
+}

@@ -2,6 +2,7 @@
 
 <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
 <html lang="en">
+    <link rel="stylesheet" href="../main.css">
 
 <header>
     <title>Food Calculator</title>
@@ -10,8 +11,19 @@
 <body>
     <h1>Calorie Calculator</h1><br><br>
     
-    <form>
-        <label></label>
+    <form class="formInput">
+        <label for="protein">Protein intake (g):</label><br><br>
+        <input type="number" min="0" name="protein" id="protein"><br><br><br>
+        <label for="carbs">Carbohydrate intake (g):</label><br><br>
+        <input type="number" min="0" name="carbs" id="carbs"><br><br><br>
+        <label for="fat">Fat intake (g):</label><br><br>
+        <input type="number" min="0" name="fat" id="fat"><br><br><br>
+        <label for="alcohol">Alcohol intake (g):</label><br><br>
+        <input type="number" min="0" name="alcohol" id="alcohol"><br><br><br>
+        <input type="button" id="tree" value="Submit">
     </form>
+
+    <script src="foodCalculator.js"></script>
+    <p id="write"></p>
 </body>
 </html>
