@@ -14,9 +14,8 @@
         <p class="large">Below, you will be asked to answer a series of questions, such as your sex and age, to determine your total daily energy expenditure. 
             Please answer all the questions accurately to learn how many calories your body needs.</p><br><br>
         
-        <label>Sex:</label><br><br>
+        <label for="symptoms">Symptoms:</label><br><br>
         <input type="text" id="symptoms" name="symptoms" placeholder="Enter your symptoms here">
-        <label for="symptoms">Symptoms</label>
         <p id="errorMassage"> </p>
         <input type="button" id="arbre" value="Submit">
     </form>
@@ -24,6 +23,12 @@
     <div id="read">
         <h3>According to your inputs, </h3>
         <p id="diseasesHere"></p>
+        <input type="button" id="acceptMostly" value="Okay">
+    </div>
+
+    <div id="write">
+        <h3>Furthermore, </h3>
+        <p id="mildDiseases"></p>
         <input type="button" id="acceptCancer" value="Okay">
     </div>
 

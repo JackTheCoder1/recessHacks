@@ -30,6 +30,9 @@ document.getElementById('arbre').addEventListener('click', function() {
     unlikelyIllnesses = [];
     notIllnesses = [];
 
+    document.getElementById('diseasesHere').innerText = "";
+    document.getElementById('mildDiseases').innerText = "";
+
     let fromDoc = document.getElementById('symptoms').value;
     let docArray = fromDoc.split(", ");
 
@@ -62,26 +65,67 @@ document.getElementById('arbre').addEventListener('click', function() {
         document.getElementById('diseasesHere').innerText = "it is very likely you have the following: ";
         for (let i = 0; i < definiteIllnesses.length; i++) {
             document.getElementById('diseasesHere').innerText += "\n- " + definiteIllnesses[i];
-    }}
+    }} else {
+        document.getElementById('diseasesHere').innerText += "there are no diseases that are most likely to have.";
+    }
 
     if (probableIllnesses.length > 0) {
-        document.getElementById('diseasesHere').innerText += "\n\nFurthermore, you may also have the following, though it is less likely:"
+        document.getElementById('mildDiseases').innerText += "you may also have the following, though it is less likely:"
         for (let i = 0; i < probableIllnesses.length; i++) {
-            document.getElementById('diseasesHere').innerText += "\n- " + probableIllnesses[i];
+            document.getElementById('mildDiseases').innerText += "\n- " + probableIllnesses[i];
         }
+    } else {
+        document.getElementById('mildDiseases').innerText += "there are no diseases in which most of your symptoms match.";
     }
 
-    function funStuff() {
-        let moveItem = document.getElementById('read');
-        let miStyle = window.getComputedStyle(moveItem);
-        let leftValue = miStyle.getPropertyValue("left").replace("px", "");
-        moveItem.style.left = (Number(leftValue) + 9) + "px";
-        counter++;
-        if (counter > 100) {
-            clearInterval(countInterval);
-        }
-    }
-    setTimeout(fadeIn, 4000);
-
-
+    funStuff();
+    funAgain();
 })
+
+document.getElementById('acceptCancer').addEventListener('click', function() {
+    if (globalCounter === 1 || globalCounter === 2) {
+        let moveItem = document.getElementById('write');
+        moveItem.style.opacity = 0;
+        globalCounter--;
+    }
+})
+
+document.getElementById('acceptMostly').addEventListener('click', function() {
+    if (globalCounter === 1 || globalCounter === 2) {
+        let moveItem = document.getElementById('read');
+        moveItem.style.opacity = 0;
+        globalCounter--;
+    }
+})
+
+
+let globalCounter = 0;
+
+function funStuff() {
+    if (globalCounter === 0) {
+        let thingy = document.getElementById('read');
+        let op = 0;
+        let timer = setInterval(function () {
+            if (op >= 1) {
+                clearInterval(timer);
+            }
+            thingy.style.opacity = op;
+            op += 0.01
+        }, 10)
+        globalCounter++;
+    }
+}
+
+function funAgain() {
+    if (globalCounter === 1) {}
+        let thingyTwo = document.getElementById('write');
+        let op = 0;
+        let timer = setInterval(function () {
+            if (op >= 1) {
+                clearInterval(timer);
+            }
+            thingyTwo.style.opacity = op;
+            op += 0.01
+        }, 10)
+        globalCounter++;
+    }
