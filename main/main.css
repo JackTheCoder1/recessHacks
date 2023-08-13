@@ -9,8 +9,12 @@
     padding-right: 90%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .aboutH {
-    padding-left: 20%;
+    padding-left: 40%;
     font-size: 30px;
 }
 
@@ -107,4 +111,9 @@ body {
     padding-right: 1510px;
     border-bottom: 4px solid gray;
     z-index: 0.5;
+}
+
+#about, #team, #contact{
+    width: 100%;
+    height: 900px;
 }
