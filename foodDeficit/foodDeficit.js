@@ -103,7 +103,7 @@ document.getElementById('arbre').addEventListener('click', function() {
         tCal = calculateDeficit(isMale, weightValue, heightValue, ageValue, exerciseValue, isPregnant, isLactating);
         console.log(tCal);
         document.getElementById('caloriesNotHere').innerText = "is estimated to be " + Math.ceil(tCal) + " kCal";
-        // isTrue = false;
+        isTrue = false;
 })
 
 document.getElementById('sureCalorie').addEventListener('click', function() {

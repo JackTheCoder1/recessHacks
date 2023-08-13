@@ -29,7 +29,6 @@ h1 {
     background-color: rgba(162, 162, 255, 0.7);
 }
 
-#tree,
 #arbre {
     margin-left: 42%;
     padding: 8px 12px;
@@ -38,24 +37,34 @@ h1 {
     border-radius: 3%;
 }
 
-#tree:active,
 #arbre:active {
     background-color: rgba(83, 83, 141, 1);
     border: 1px solid rgba(83, 83, 141, 1);
 }
 
-#write,
 #read {
+    position: absolute;
+    left: -250px;
+    border: 2px solid rgba(77, 165, 111, 0.7);
+    opacity: 1;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: rgba(169, 250, 200, 0.7);
+    margin-right: 10%;
+    max-width: 250px;
+}
+
+#write {
     position: relative;
     border: 2px solid rgba(77, 165, 111, 0.7);
-    opacity: 0;
+    opacity: 1;
     border-radius: 5%;
     padding: 20px;
     background-color: rgba(169, 250, 200, 0.7);
     margin-left: 50%;
     margin-right: 10%;
-    max-width: 20%;
-}
+    max-width: 250px;
+} 
 
 body {
     background-color: #e5e5f7;
@@ -69,13 +78,11 @@ body {
     font-family: sans-serif;
 }
 
-#errorMessage,
 #errorMassage {
     color: red;
 }
 
-#okayCalorie,
-#sureCalorie {
+#acceptCancer {
     margin-top: 5px;
     background-color: rgba(77, 165, 111);
     border: 2px solid rgba(77, 165, 111);
@@ -85,8 +92,7 @@ body {
     border-radius: 3px;
 }
 
-#okayCalorie:active,
-#sureCalorie:active {
+#acceptCancer:active {
     background-color: rgba(57, 145, 91);
     border: 2px solid rgba(57, 145, 91);
 }
