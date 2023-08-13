@@ -12,10 +12,161 @@ let anxiety = ["Anxiety", "Nervousnesss", "Sense of impending danger", "Increase
 let appendicitis = ["Appendicitis", "Swelling of the appendix", "Abdominal pain", "Loss of appetite", "Diarrhea", "Difficulty walking"];
 let arthritis = ["Arthritis", "Joint pain", "Joint stiffness", "Joint inflammation", "Restricted joint movement"];
 let asthma = ["Asthma", "Wheezing", "Coughing", "Chest tightness", "Increased heart rate", "Drowsiness", "Confusion", "Dizziness", "Blue lips", "Blue fingers", "Fainting"];
+
 let bladderCancer = ["Bladder cancer", "Blood in urine", "Pain while urinating", "Frequent urination"];
+let bloodpoisoning = ["Blood Poisoning", "Loss of consciousness", "Severe breathlessness", "Fever", "Confusion", "Disorientation", "Slurred speech", "Mottled skin", "Increased heart rate", "Fast breathing", "Chills", "Dizziness", "Vomiting", "Nausea", "Diarrhea"];
+let bonecancer = ["Bone Cancer", "Persistent bone pain", "Swelling", "Redness", "Lump over a bone"];
+let bowelcancer = ["Bowel Cancer", "",];
+let braintumor = [];
+let breastcancerfemale = [];
+let breastcancermale = [];
+let bronchitis = [];
+let bunion = [];
+
+let carcinoidsyndrome = [];
+let cervicalcancer = [];
+let chickenpox = [];
+let chlamydia = [];
+let chronicfatiguesyndrome = [];
+let croniclymphocyticleukemia = [];
+let coldsore = [];
+let commoncold = [];
+let constipation = [];
+let coronavirus = [];
+let crohnsdisease = [];
+
+let dehydration = [];
+let dementia = [];
+let depression = [];
+
+let earache = [];
+let ebola = [];
+let erectiledysfunction = [];
+let escherichiacoli = [];
+let eyecancer = [];
+
+let flu = [];
+let foodpoisoning = [];
+
+let gallbladdercancer = [];
+let genitalherpes = [];
+let genitalwarts = [];
+let gonorrhoea = [];
+
+let handfootmouthdisease = [];
+let heyfever = [];
+let headlice = [];
+let heartfailure = [];
+let hepatitisA = [];
+let hepatitisB = [];
+let hepatitisC = [];
+let hiv = [];
+let huntington = [];
+
+let indigestion = [];
+let ingrowntoenail = [];
+let insomnia = [];
+let ibs = [];
+
+let kidneycancer = [];
+let kidneystone = [];
+
+let lactoseintolerance = [];
+let laryngitis = [];
+let livercaner = [];
+let lungcancer = [];
+let lymedisease = [];
+
+let malaria = [];
+let malignantbraintumor = [];
+let malnutrition = [];
+let measles = [];
+let mouthulcer = [];
+
+let nasalandsinuscancer = [];
+let nasopharyngealcancer = [];
+let neuroblastoma = [];
+let neuroendocrinetumors = [];
+let nonhodgkinlymphoma = [];
+let norovirus = [];
+
+let ocd = [];
+let obstructivesleepapnoea = [];
+let oesophagealcancer = [];
+let osteoporosis = [];
+let osteosarcoma = [];
+let ovariancancer = [];
+let overactivethyroid = [];
+
+let pigetsdisease = [];
+let pancreaticcancer = [];
+let panicdisorder = [];
+let parkinsonsdisease = [];
+let pelvicinflammatorydisease = [];
+let penilecancer = [];
+let pleurisy = [];
+let pneumonia = [];
+let ptsd = [];
+let prostatecancer = [];
+
+let retinoblastoma = [];
+let rhabdomyosarcoma = [];
+let ringworm = [];
+
+let syphilisfirststage = [];
+let syphilissecondstage = [];
+let syphilissthirdstage = [];
+let stroke = [];
+let streptococcusA = [];
+let stomachcancer = [];
+let softtissuesarcomas = [];
+let slappedcheeksyndrome = [];
+let skincancernon = [];
+let skincancermelanoma = [];
+let sjogrenssyndrome = [];
+let sicklecelldesease = [];
+let shingles = [];
+let scoliosis = [];
+let scizonphrenia = [];
+let scarletfever = [];
+
+let testicularcancer = [];
+let threadworms = [];
+let thyroidcancer = [];
+let tinnitus = [];
+let tonsillitis = [];
+let tia = [];
+let tb = [];
+let tp1disbetes = [];
+let tp2disbetes = [];
+
+let urticaria = [];
+let urinarytractinfection = [];
+let underactivethyroid = [];
+
+let vulvarcancer = [];
+let varicoseecxema = [];
+let vaginalcancer = [];
+
+let wombcancer = [];
+let wilmstumor = [];
+let whoopingcough = [];
 
 
-let allIllnesses = [acne, allergicRhinitis, allergies, alzheimers, analCancer, anaphylaxis, anorexiaNervosa, anxiety, appendicitis, arthritis, asthma, bladderCancer];
+
+
+
+let allIllnesses = [acne, allergicRhinitis, allergies, alzheimers, analCancer, anaphylaxis, anorexiaNervosa, anxiety, appendicitis, arthritis, asthma, bladderCancer, bloodpoisoning, bonecancer,
+bowelcancer, braintumor, breastcancerfemale, breastcancerfemale, bronchitis, bunion, arcinoidsyndrome, cervicalcancer, chickenpox, chlamydia, chronicfatiguesyndrome, croniclymphocyticleukemia,
+coldsore, commoncold, constipation, coronavirus, crohnsdisease, dehydration, dementia, depression, earache, ebola, erectiledysfunction, escherichiacoli, eyecancer, flu, foodpoisoning, gallbladdercancer, genitalherpes,
+genitalwarts, gonorrhoea, handfootmouthdisease, heyfever, headlice, heartfailure, hepatitisA, hepatitisB, hepatitisC, hiv, huntington, indigestion, ingrowntoenail, insomnia, ibs, kidneycancer, kidneystone,
+lactoseintolerance, laryngitis, livercaner, lungcancer, lymedisease, malaria, malignantbraintumor, malnutrition, measles, mouthulcer, nasalandsinuscancer, nasopharyngealcancer,
+neuroblastoma, neuroendocrinetumors, nonhodgkinlymphoma, norovirus, ocd, obstructivesleepapnoea, oesophagealcancer, osteoporosis, osteosarcoma, ovariancancer, overactivethyroid, pigetsdisease, pancreaticcancer,
+panicdisorder, parkinsonsdisease, pelvicinflammatorydisease, penilecancer, pleurisy, pneumonia, ptsd, prostatecancer, retinoblastoma, rhabdomyosarcoma, ringworm, syphilisfirststage,
+syphilissecondstage, syphilissthirdstage, stroke, streptococcusA, stomachcancer, softtissuesarcomas, slappedcheeksyndrome, skincancernon, skincancermelanoma, sjogrenssyndrome, sicklecelldesease,
+shingles, scoliosis, scizonphrenia, scarletfever, testicularcancer, threadworms, thyroidcancer, tinnitus, tonsillitis, tia, tb, tp1disbetes, tp2disbetes, urticaria, urinarytractinfection,
+underactivethyroid, vulvarcancer, varicoseecxema, vaginalcancer, wombcancer, wilmstumor, whoopingcough];
+
 
 let definiteIllnesses = [];
 let probableIllnesses = [];
