@@ -1,17 +1,17 @@
 .head {
-    background: 
-      radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#4881ac 54% 57%,#0000 59%) 0 calc(172px/2),
-      radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#4881ac 54% 57%,#0000 59%) calc(172px/2) 0,
-      radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#4881ac 54% 57%,#0000 59%),
-      radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#4881ac 54% 57%,#0000 59%),
-      #4f8dbd;
-    background-size: calc(172px/4.667) 172px,172px calc(172px/4.667);
-    margin-top: -8px;
-    margin-left: -8px;
-    padding: 30px;
-    display: inline;
-    width: 100%;
-    border-bottom: 4px solid gray;
+    display: inline-flex;
+    padding-top: 30px;
+}
+
+#headh1 {
+    color: black;
+    padding-left: 50px;
+    padding-right: 90%;
+}
+
+.aboutH {
+    padding-left: 40%;
+    font-size: 30px;
 }
 
 .divisor {
@@ -72,13 +72,13 @@ i {
 body {
     background-color: #cce7fc
 }
-/* 
+
 .bg {
     background-image: linear-gradient(gray, #c6e5fc);
     height: 40px;
     width: 100%;
     margin-left: -8px;
-    margin-top: -34px;
+    margin-top: 0px;
     position: absolute;
 }
 
@@ -87,9 +87,24 @@ body {
     height: 40px;
     width: 100%;
     margin-right: -8px;
-    margin-top: -34px;
-} */
+    margin-top: 0px;
+}
 
 .secondDivider {
     margin-top: 1200px;
+}
+
+.head {
+    background: 
+      radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#4881ac 54% 57%,#0000 59%) 0 calc(172px/2),
+      radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#4881ac 54% 57%,#0000 59%) calc(172px/2) 0,
+      radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#4881ac 54% 57%,#0000 59%),
+      radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#4881ac 54% 57%,#0000 59%),
+      #4f8dbd;
+    background-size: calc(172px/4.667) 172px,172px calc(172px/4.667);
+    margin-top: -8px;
+    margin-left: -8px;
+    padding-right: 1510px;
+    border-bottom: 4px solid gray;
+    z-index: 0.5;
 }

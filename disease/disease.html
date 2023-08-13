@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+<html lang="en">
+    <link rel="stylesheet" href="../foodCalculator/foodCalculator.css">
+
+<header>
+    <title>TDEE Calculator</title>
+</header>
+<body>
+    <h1>Benedict-Harris TDEE Calculator</h1><br><br>
+    
+    <form class="formInput">
+        <p class="large">Below, you will be asked to answer a series of questions, such as your sex and age, to determine your total daily energy expenditure. 
+            Please answer all the questions accurately to learn how many calories your body needs.</p><br><br>
+        
+        <label>Sex:</label><br><br>
+        <input type="radio" id="male" name="sexThing" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sexThing" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="weight">Weight (kg)</label><br><br>
+        <input type="number" min="0" name="weight" id="weight" default="0" placeholder="0"><br><br><br>
+
+        <label for="height">Height (cm)</label><br><br>
+        <input type="number" min="0" name="height" id="height" default="0" placeholder="0"><br><br><br>
+
+        <label for="age">Age (years)</label><br><br>
+        <input type="number" min="0" name="age" id="age" default="0" placeholder="0"><br><br>
+        <p id="errorMassage"> </p>
+        <input type="button" id="arbre" value="Submit">
+    </form>
+<!-- 
+    <div id="read">
+        <h3>Your total daily energy expenditure</h3>
+        <p id="caloriesNotHere"></p>
+        <input type="button" id="sureCalorie" value="Okay">
+    </div> -->
+
+    <script src="foodDeficit.js"></script>
+</body>

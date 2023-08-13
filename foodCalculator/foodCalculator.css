@@ -90,3 +90,16 @@ body {
     padding: 3px;
     border-radius: 1px;
 }
+
+#arbre {
+    margin-left: 42%;
+    padding: 8px 12px;
+    border: 1px solid rgba(103, 103, 161, 1);
+    background-color: rgba(103, 103, 161, 1);
+    border-radius: 3%;
+}
+
+#arbre:active {
+    background-color: rgba(83, 83, 141, 1);
+    border: 1px solid rgba(83, 83, 141, 1);
+}
