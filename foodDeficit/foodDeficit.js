@@ -61,14 +61,21 @@ document.getElementById('arbre').addEventListener('click', function() {
     }, 10)
 
         }
+
         prevG = (isMale) ? 1 : 0;
         prevW = weightValue;
-        prev
+        prevH = heightValue;
+        prevA = ageValue;
 
-        // let tCal = calculateCalories(pIntake, cIntake, fIntake, aIntake);
-        // document.getElementById('caloriesHere').innerText = "is estimated to be " + tCal + " kCal";
-        // globalCounter++;
-        // isTrue = false;
+        weightValue = document.getElementById('weight').value;
+        heightValue = document.getElementById('height').value;
+        ageValue = document.getElementById('age').value;
+        console.log(ageValue);
+
+        let tCal = calculateDeficit(isMale, weightValue, heightValue, ageValue)
+        document.getElementById('caloriesNotHere').innerText = "is estimated to be " + tCal + " kCal";
+        globalCounter++;
+        isTrue = false;
     }
     // } else {
 
