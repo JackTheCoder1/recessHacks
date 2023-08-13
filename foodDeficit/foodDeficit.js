@@ -13,13 +13,6 @@ function calculateDeficit(male, weight, height, age) {
 
 }
 
-let globalCounter = 0;
-
-let prevG = 0;
-let prevW = 0;
-let prevH = 0;
-let prevA = 0;
-
 let weightValue = 0;
 let heightValue = 0;
 let ageValue = 0;
@@ -48,24 +41,17 @@ document.getElementById('arbre').addEventListener('click', function() {
         document.getElementById('errorMassage').innerText += "Please enter a sex (either male or female)";
     }
 
-    if (globalCounter === 0) {
-        if (isTrue) {
-            let thingy = document.getElementById('read');
-            let op = 0;
-            let timer = setInterval(function () {
-            if (op >= 1) {
-                clearInterval(timer);
-            }
-            thingy.style.opacity = op;
-            op += 0.01
-    }, 10)
-
+    if (isTrue) {
+        let thingy = document.getElementById('read');
+        let op = 0;
+        let timer = setInterval(function () {
+        if (op >= 1) {
+            clearInterval(timer);
         }
-
-        prevG = (isMale) ? 1 : 0;
-        prevW = weightValue;
-        prevH = heightValue;
-        prevA = ageValue;
+        thingy.style.opacity = op;
+        op += 0.01
+    }, 10)
+    }
 
         weightValue = document.getElementById('weight').value;
         heightValue = document.getElementById('height').value;
@@ -73,30 +59,12 @@ document.getElementById('arbre').addEventListener('click', function() {
         console.log(ageValue);
 
         let tCal = calculateDeficit(isMale, weightValue, heightValue, ageValue)
-        document.getElementById('caloriesNotHere').innerText = "is estimated to be " + tCal + " kCal";
-        globalCounter++;
+        document.getElementById('caloriesNotHere').innerText = "is estimated to be " + Math.ceil(tCal) + " kCal";
         isTrue = false;
-    }
-    // } else {
-
-    //     if (pIntake === previousP && cIntake === previousC && fIntake === previousF && aIntake === previousA) {
-
-    //         document.getElementById('errorMessage').innerText = "Please try entering a different set of values.";
-
-    //     } else {
-
-    //         globalCounter--;
-    //         document.getElementById('errorMessage').innerText = "";
-    //         let tCal = calculateCalories(pIntake, cIntake, fIntake, aIntake);
-    //         document.getElementById('caloriesHere').innerText = "is estimated to be " + tCal + " kCal";
-
-    //     }
-    // }
 })
 
-// document.getElementById('sureCalorie').addEventListener('click', function() {
-//     let second = document.getElementById('read');
-//     second.style.opacity = 0;
-//     isTrue = true;
-//     globalCounter = 0;
-// })
+document.getElementById('sureCalorie').addEventListener('click', function() {
+    let second = document.getElementById('read');
+    second.style.opacity = 0;
+    isTrue = true;
+})

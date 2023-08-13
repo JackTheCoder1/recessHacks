@@ -29,7 +29,8 @@ h1 {
     background-color: rgba(162, 162, 255, 0.7);
 }
 
-#tree {
+#tree,
+#arbre {
     margin-left: 42%;
     padding: 8px 12px;
     border: 1px solid rgba(103, 103, 161, 1);
@@ -37,12 +38,14 @@ h1 {
     border-radius: 3%;
 }
 
-#tree:active {
+#tree:active,
+#arbre:active {
     background-color: rgba(83, 83, 141, 1);
     border: 1px solid rgba(83, 83, 141, 1);
 }
 
-#write {
+#write,
+#read {
     position: relative;
     border: 2px solid rgba(77, 165, 111, 0.7);
     opacity: 0;
@@ -66,11 +69,13 @@ body {
     font-family: sans-serif;
 }
 
-#errorMessage {
+#errorMessage,
+#errorMassage {
     color: red;
 }
 
-#okayCalorie {
+#okayCalorie,
+#sureCalorie {
     margin-top: 5px;
     background-color: rgba(77, 165, 111);
     border: 2px solid rgba(77, 165, 111);
@@ -80,7 +85,8 @@ body {
     border-radius: 3px;
 }
 
-#okayCalorie:active {
+#okayCalorie:active,
+#sureCalorie:active {
     background-color: rgba(57, 145, 91);
     border: 2px solid rgba(57, 145, 91);
 }
@@ -89,17 +95,4 @@ body {
     border: 1px solid black;
     padding: 3px;
     border-radius: 1px;
-}
-
-#arbre {
-    margin-left: 42%;
-    padding: 8px 12px;
-    border: 1px solid rgba(103, 103, 161, 1);
-    background-color: rgba(103, 103, 161, 1);
-    border-radius: 3%;
-}
-
-#arbre:active {
-    background-color: rgba(83, 83, 141, 1);
-    border: 1px solid rgba(83, 83, 141, 1);
 }
