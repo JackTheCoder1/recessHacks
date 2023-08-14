@@ -16,7 +16,6 @@
    padding:20px;
    padding-bottom: 60px;
 }
-
 .container .content{
    text-align: center;
 }
@@ -25,27 +24,15 @@
    font-size: 30px;
    color:#333;
 }
-
-.container .content h3 span{
-   background: crimson;
-   color:#fff;
-   border-radius: 5px;
-   padding:0 15px;
-}
-
 .container .content h1{
    font-size: 50px;
    color:#333;
 }
 
-.container .content h1 span{
-    color:crimson;
- }
 .container .content p{
    font-size: 25px;
    margin-bottom: 20px;
 }
-
 .container .content .btn{
    display: inline-block;
    padding:10px 30px;
@@ -56,10 +43,6 @@
    text-transform: capitalize;
 }
 
-.container .content .btn:hover{
-    background: crimson;
- }
- 
 .form-container{
    min-height: 100vh;
    display: flex;
@@ -69,16 +52,14 @@
    padding-bottom: 60px;
    background: #eee;
 }
-
 .form-container form{
    padding:20px;
    border-radius: 5px;
-   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   box-shadow: 0 5px 10px black;
    background: #fff;
    text-align: center;
    width: 500px;
 }
-
 .form-container form h3{
    font-size: 30px;
    text-transform: uppercase;
@@ -99,7 +80,6 @@
 .form-container form select option{
    background: #fff;
 }
-
 .form-container form .form-btn{
    background: #c6e5fc;
    color: black;
@@ -112,21 +92,11 @@
    background: blue;
    color:#fff;
 }
-
 .form-container form p{
    margin-top: 10px;
    font-size: 20px;
    color:#333;
 }
-
-.form-container form p a{
-   color:crimson;
-}
-
-.form-container form .error-msg{
-   margin:10px 0;
-   display: block;
-   background: crimson;
    color:#fff;
    border-radius: 5px;
    font-size: 20px;
