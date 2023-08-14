@@ -6,7 +6,7 @@
 #headh1 {
     color: black;
     padding-left: 50px;
-    padding-right: 90%;
+    padding-right: 50%;
 }
 
 html{
@@ -14,7 +14,7 @@ html{
 }
 
 .aboutH {
-    padding-left: 40%;
+    padding-left: 10%;
     font-size: 30px;
 }
 
@@ -63,6 +63,9 @@ a:active {
 i {
     font-size: 70px;
     padding: 40px 35px;
+}
+#second i {
+    padding: 40px 40px;
 }
 
 #third i {
@@ -113,7 +116,7 @@ body {
     z-index: 0.5;
 }
 
-#about, #team, #contact{
+#FirstService, #SecondService, #ThirdService{
     width: 100%;
     height: 900px;
 }
